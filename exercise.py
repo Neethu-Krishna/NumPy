@@ -91,7 +91,27 @@ np.random.shuffle(array_shuffle)
 print(array_shuffle)
 
 # 21.Transpose a 2×3 matrix.
+arr = np.array([
+    [1,2,3],
+    [4,5,6]
+])
+result = arr.T
+print(result)
 
 # 22.Reshape a 1D array (1 to 12) into 3×4.
+arr = np.arange(1,13)
+result =arr.reshape(3,4)
+print(result)
+
 # 23.Resize a 1D array of size 5 into 3×3 (showing how elements repeat or using zero padding).
+arr = np.array([1,2,3,4,5])
+result = np.resize(arr,(3,3))
+print(result)
+
 # 24.Convert a 2D array into 1D.
+arr = np.array([
+    [1,2,3],
+    [4,5,6]
+])
+result = arr.flatten()
+print(result)
